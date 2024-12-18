@@ -23,6 +23,12 @@ app.post("/add", (req, res) =>{
     }).then(result => res.json(result))
     .catch(err => res.json(err))
 })
+app.put("/update/:id", (req,res) =>{
+    const {id} = req.params;
+    TodoModel.findByIdAndUpdate({_id:id}, {done: true})
+    .then(result => res.json(result))
+    .catch(err => res.json(err))
+})
 app.listen(8000, ()=> {
     console.log("Server running on port 8000")
 })

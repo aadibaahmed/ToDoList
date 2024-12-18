@@ -5,22 +5,49 @@ body{
   margin-top: 100px;
   background-color: lavender;
 }
-
+h2{
+  text-align: center; 
+}
 input{
   width: 400px;
   padding: 20px;
   border: 4px solid;
   outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 button{
-  background-color: skyblue; 
+  background-color: hsl(229, 100%, 81%); 
   border: 4px solid;
   padding: 20px;
   color: black;
   cursor: pointer;
+}
+button:hover{
+  background-color: hsl(197, 72%, 28%);
+}
+
+button:active{
+  background-color: hsl(231, 100%, 56%);
+}
+#tasks{
+  display: flex;
+  background-color: hsl(268, 91%, 70%);
+  padding: 20px;
+  margin-top: 10px;
+  border: 4px solid;
   font-weight: bold;
-}
-task{
   align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
+/* #Check_done{
+  background-color: hsl(0, 0%, 0%); 
+  border: 4px solid;
+  padding: 10px;
+  transform: rotate(45deg);
+  margin: 20px;
+} */
