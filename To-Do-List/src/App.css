@@ -24,6 +24,7 @@ button{
   padding: 20px;
   color: black;
   cursor: pointer;
+  transition: background-color .3s ease;
 }
 button:hover{
   background-color: hsl(197, 72%, 28%);
@@ -44,6 +45,18 @@ button:active{
   height: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
+.finished_tasks{
+  display: flex;
+  background-color: hsl(229, 100%, 81%); 
+  border: 4px solid;
+  padding: 20px;
+  color: black;
+  cursor: pointer;
+}
+.completed_task{
+  text-decoration: line-through;
+}
+
 /* #Check_done{
   background-color: hsl(0, 0%, 0%); 
   border: 4px solid;

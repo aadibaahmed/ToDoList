@@ -5,7 +5,7 @@ function Create() {
   const [task, setTask] = useState()
   const add_task = () => {
     axios.post('http://localhost:8000/add', {task: task})
-    .then(result => console.log(result))
+    .then(result => location.reload())
     .catch(err => console.log(err))
   } 
   return(
